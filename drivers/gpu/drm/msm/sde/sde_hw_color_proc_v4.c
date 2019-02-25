@@ -15,6 +15,7 @@
 #include "sde_hw_color_proc_common_v4.h"
 #include "sde_hw_color_proc_v4.h"
 
+<<<<<<< HEAD
 unsigned int kcal_red = 256;
 unsigned int kcal_green = 256;
 unsigned int kcal_blue = 256;
@@ -22,6 +23,23 @@ unsigned int kcal_hue = 0;
 unsigned int kcal_sat = 255;
 unsigned int kcal_val = 255;
 unsigned int kcal_cont = 255;
+=======
+#ifdef CONFIG_KLAPSE
+#include "klapse.h"
+
+unsigned short kcal_red = 256;
+unsigned short kcal_green = 256;
+unsigned short kcal_blue = 256;
+#else
+static unsigned short kcal_red = 256;
+static unsigned short kcal_green = 256;
+static unsigned short kcal_blue = 256;
+#endif
+static unsigned short kcal_hue = 0;
+static unsigned short kcal_sat = 255;
+static unsigned short kcal_val = 255;
+static unsigned short kcal_cont = 255;
+>>>>>>> 7aaa00b85fd6 (Introducing KLapse - A kernel level livedisplay module v4.0:)
 
 module_param(kcal_red, uint, 0644);
 module_param(kcal_green, uint, 0644);
