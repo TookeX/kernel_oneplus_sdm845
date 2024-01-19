@@ -6272,7 +6272,6 @@ static const struct snd_kcontrol_new tavil_snd_controls[] = {
 	SOC_SINGLE_TLV("ADC3 Volume", WCD934X_ANA_AMIC3, 0, 20, 0, analog_gain),
 	SOC_SINGLE_TLV("ADC4 Volume", WCD934X_ANA_AMIC4, 0, 20, 0, analog_gain),
 
-<<<<<<< HEAD
 	SOC_SINGLE_S8_TLV("RX0 Digital Volume", WCD934X_CDC_RX0_RX_VOL_CTL,
 		-84, 40, digital_gain), /* -84dB min - 40dB max */
 	SOC_SINGLE_S8_TLV("RX1 Digital Volume", WCD934X_CDC_RX1_RX_VOL_CTL,
@@ -6301,7 +6300,6 @@ static const struct snd_kcontrol_new tavil_snd_controls[] = {
 		WCD934X_CDC_RX7_RX_VOL_MIX_CTL, -84, 40, digital_gain),
 	SOC_SINGLE_S8_TLV("RX8 Mix Digital Volume",
 		WCD934X_CDC_RX8_RX_VOL_MIX_CTL, -84, 40, digital_gain),
-=======
 	SOC_SINGLE_SX_TLV("RX0 Digital Volume", WCD934X_CDC_RX0_RX_VOL_CTL,
 		0, -84, 40, digital_gain), /* -84dB min - 40dB max */
 #ifndef CONFIG_SOUND_CONTROL
@@ -6334,7 +6332,6 @@ static const struct snd_kcontrol_new tavil_snd_controls[] = {
 		WCD934X_CDC_RX7_RX_VOL_MIX_CTL, 0, -84, 40, digital_gain),
 	SOC_SINGLE_SX_TLV("RX8 Mix Digital Volume",
 		WCD934X_CDC_RX8_RX_VOL_MIX_CTL, 0, -84, 40, digital_gain),
->>>>>>> 8688fb5a93e3 (wcd934x: add sound control)
 
 	SOC_SINGLE_S8_TLV("DEC0 Volume", WCD934X_CDC_TX0_TX_VOL_CTL,
 		-84, 40, digital_gain),
