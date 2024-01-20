@@ -25,13 +25,11 @@
 #include "dsi_ctrl_hw.h"
 #include <linux/pm_wakeup.h>
 
-<<<<<<< HEAD
-=======
 #ifdef CONFIG_KLAPSE
 #include "../sde/klapse.h"
+extern void set_rgb_slider(u32 bl_lvl); 
 #endif
 
->>>>>>> 7aaa00b85fd6 (Introducing KLapse - A kernel level livedisplay module v4.0:)
 /**
  * topology is currently defined by a set of following 3 values:
  * 1. num of layer mixers
