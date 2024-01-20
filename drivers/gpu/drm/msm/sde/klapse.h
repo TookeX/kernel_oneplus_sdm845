@@ -11,7 +11,7 @@ extern void set_rgb_slider(u32 bl_lvl);
 #define K_GREEN  kcal_green
 #define K_BLUE   kcal_blue
 
-#define K_TYPE   unsigned short
+#define K_TYPE   unsigned int
 
 extern K_TYPE K_RED, K_GREEN, K_BLUE;
 
