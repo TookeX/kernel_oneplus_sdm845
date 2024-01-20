@@ -25,18 +25,18 @@ unsigned int kcal_cont = 255;
 #ifdef CONFIG_KLAPSE
 #include "klapse.h"
 
-unsigned short kcal_red = 256;
-unsigned short kcal_green = 256;
-unsigned short kcal_blue = 256;
+unsigned int kcal_red = 256;
+unsigned int kcal_green = 256;
+unsigned int kcal_blue = 256;
 #else
-static unsigned short kcal_red = 256;
-static unsigned short kcal_green = 256;
-static unsigned short kcal_blue = 256;
+static unsigned int kcal_red = 256;
+static unsigned int kcal_green = 256;
+static unsigned int kcal_blue = 256;
 #endif
-static unsigned short kcal_hue = 0;
-static unsigned short kcal_sat = 255;
-static unsigned short kcal_val = 255;
-static unsigned short kcal_cont = 255;
+static unsigned int kcal_hue = 0;
+static unsigned int kcal_sat = 255;
+static unsigned int kcal_val = 255;
+static unsigned int kcal_cont = 255;
 
 module_param(kcal_red, uint, 0644);
 module_param(kcal_green, uint, 0644);
