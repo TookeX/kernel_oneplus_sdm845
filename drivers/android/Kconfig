@@ -54,6 +54,12 @@ config ANDROID_BINDER_IPC_SELFTEST
 	  exhaustively with combinations of various buffer sizes and
 	  alignments.
 
+config RE_KERNEL
+        bool "RE-Kernel support"
+	default n
+	---help---
+	  This can enable the support of rekernel.
+
 endif # if ANDROID
 
 endmenu
