@@ -3,6 +3,7 @@
 #include <net/sock.h>
 #include <linux/netlink.h>
 #include <linux/proc_fs.h>
+#include <linux/module.h>
 
 #define NETLINK_REKERNEL_MAX     		26
 #define NETLINK_REKERNEL_MIN     		22
