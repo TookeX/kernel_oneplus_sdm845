@@ -49,6 +49,8 @@
 #include <asm/cacheflush.h>
 #include "audit.h"	/* audit_signal_info() */
 
+#include "../drivers/android/rekernel_include.c"
+
 /*
  * SLAB caches for signal bits.
  */
