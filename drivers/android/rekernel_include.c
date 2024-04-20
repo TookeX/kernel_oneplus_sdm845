@@ -10,7 +10,7 @@
 #define USER_PORT        			100
 #define PACKET_SIZE 				128
 
-struct sock *rekernel_netlink = NULL;
+extern struct sock *rekernel_netlink = NULL;
 extern struct net init_net;
 int netlink_unit = NETLINK_REKERNEL_MIN;
 
@@ -35,7 +35,7 @@ static int send_netlink_message(char *msg, uint16_t len) {
     return netlink_unicast(rekernel_netlink, skbuffer, USER_PORT, MSG_DONTWAIT);
 }
 
-static void netlink_rcv_msg(struct sk_buff *skbuffer) { // Ignore recv msg.
+extern static void netlink_rcv_msg(struct sk_buff *skbuffer) { // Ignore recv msg.
 }
 
 struct netlink_kernel_cfg rekernel_cfg = { 
