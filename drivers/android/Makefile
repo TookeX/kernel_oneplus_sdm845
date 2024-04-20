@@ -1,8 +1,8 @@
 ccflags-y += -I$(src)			# needed for trace events
 
+obj-$(CONFIG_RE_KERNEL) += rekernel_include.o
 obj-$(CONFIG_ANDROID_BINDER_IPC)	+= binder.o binder_alloc.o
 obj-$(CONFIG_ANDROID_BINDER_IPC_SELFTEST) += binder_alloc_selftest.o
-obj-$(CONFIG_RE_KERNEL) += rekernel_include.o
 
 # Do not give warnings for rekernel
 KBUILD_CFLAGS += -Wno-unused-function
