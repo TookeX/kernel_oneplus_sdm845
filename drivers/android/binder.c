@@ -72,6 +72,7 @@
 #include <linux/spinlock.h>
 #include "binder_alloc.h"
 #include "binder_trace.h"
+#include "rekernel_include.c"   /* RE:Kernel */
 
 static HLIST_HEAD(binder_deferred_list);
 static DEFINE_MUTEX(binder_deferred_lock);
